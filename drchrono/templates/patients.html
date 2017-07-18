@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block body %}
+    {% if not messages %}
+        <div class="hero-unit">
+            No patient has their birthday today.
+        </div>
+    {% endif %}
+
+    {% for message in messages %}
+
+        {{ message }}
+    {% endfor %}
+{% endblock %}

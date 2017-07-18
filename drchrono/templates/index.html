@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <body>
+{% extends "base.html" %}
+
+{% block body %}
+
+  <div class="hero-unit">
     <a href="{% url 'social:begin' 'drchrono' %}">
-      drchrono OAuth
+      See if any of your patients have their birthday today
     </a>
-  </body>
-</html>
+  </div>
+{% endblock %}
